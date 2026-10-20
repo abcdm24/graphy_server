@@ -1,6 +1,6 @@
 FROM node:22.23.2-alpine
 
-RUN apk add --no-cache --upgrade musl musl-utils zlib
+RUN apk add --no-cache --upgrade zlib
 
 COPY graphserver.js .
 COPY package.json .
